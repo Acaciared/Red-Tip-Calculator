@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="tip.png" />
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>Tip Calculator</title>
+</head>
+<body>
+ <div class="container">
+     <div class="calculator">
+        <h1 class="h1">Reds Tip Calculator</h1>
+        <br>
+        <label for="amount">Bill Amount</label>
+        <br>
+        <button><i class="fas fa-dollar-sign"></i></button><input id="amount"type="numbers">
+        <br>
+        <br>
+        <label for="precent">Tip Percentages</label>
+        <button onclick="calculateTip(15)">15%</button>
+        <button onclick="calculateTip(18)">18%</button> 
+        <button onclick="calculateTip(20)">20%</button> 
+        <button onclick="calculateTip(25)">25%</button>
+        <br>
+        <br>
+        <label for="custom">Custom Percent</label>
+        <button><i class="fas fa-percent"></i></button><input id="customPercentAmount" type="numbers"> 
+        <br>
+        <br>
+        <button id="calcButton" onclick="calculateTip(document.getElementById('customPercentAmount').value)">Calculate</button>
+        <br>
+        <br>
+        <label for="Total">Total Bill Amount</label>
+        <br>
+        <button><i class="fas fa-dollar-sign"></i></button><input id="totalBillAmount" type="numbers">
+     </div>
+
+ </div>
+</body>
+</html>
+<script src="app.js"></script>
+
